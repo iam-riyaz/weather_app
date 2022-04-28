@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-weight: bold;
+        }
+        #main{
+            display: flex;
+            justify-content: center;
+            
+        }
+        #container{
+            flex: 5;
+            margin-left: 30px;
+        }
+        #mapouter{
+            flex: 5;
+        }
+        #gmap_canvas{
+            
+            margin-right: 30px;
+        }
+        body{
+            background-image: url("https://www.cambridge.org/elt/blog/wp-content/uploads/2019/02/background-3268840_1920.jpg");
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" id="city" placeholder="Enter City">
+    <button id="search" onclick="getWeatherData() ">Search</button>
+    <div id="main">
+        <div id="container">
+                
+        </div>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+    <iframe width="500" height="400" id="gmap_canvas"  frameborder="0" ></iframe>
+            </div>
+        </div>
+           
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
